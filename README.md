@@ -12,7 +12,7 @@ docker-compose up
 
 ## Configuration
 
-environments:
+environment:
 
 - THREADS
 - POOL_SIZE

@@ -10,6 +10,27 @@ docker-compose up
 * host:webdis:7379
 * guest:redis:6379
 
+## Configuration
+
+environments:
+
+- THREADS
+- POOL_SIZE
+- WEBSOCKETS
+- ACL_DISABLED
+- ACL_HTTP_BASIC_AUTH
+- ACL_HTTP_BASIC_AUTH_ENABLED
+- VERBOSITY
+- LOGFILE
+- DATABASE
+- REDIS_HOST
+- REDIS_PORT
+- REDIS_AUTH
+
+volumes:
+
+- '$PWD/webdis.log:/webdis.log'
+
 ## Testing
 
 ```sh

@@ -4,6 +4,8 @@ webdis:
    - '7379:7379'
   links:
    - redis
+  #volumes:
+  # - $PWD/webdis.json:/etc/webdis.json
 
 redis:
   image: redis
